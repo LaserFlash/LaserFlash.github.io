@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 1em/1.5em "Open Sans", sans-serif;
+  background-color: #d2232a;
+  color: white;
+}
+
+a {
+  color: #00aeef;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+}
+
+header p:nth-child(1) {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+}
+
+header p:nth-child(2) {
+  margin: .5rem 0 0;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+main {
+  background-color: white;
+  color: black;
+  padding: 2rem 0 4rem;
+}
+
+h1 {
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 4rem;
+  text-align: center;
+}
+
+main img {
+  display: block;
+  width: 12rem;
+  max-width: 50%;
+  margin: 0 auto 1rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+main p {
+  width: 30rem;
+  max-width: 80%;
+  margin: 0 auto 1rem;
+}
+
+.social {
+  list-style: none;
+  margin: 1rem auto 0;
+  padding: 0;
+  width: 15rem;
+  max-width: 80%;
+}
+
+.social li {
+  margin: 0;
+  padding: 0;
+}
+
+.social li a {
+  display: block;
+  position: relative;
+  padding-left: 3rem;
+  line-height: 2rem;
+  vertical-align: middle;
+  color: #999;
+  transition: color 0.2s ease;
+}
+
+.social li a:hover {
+  color: #00aeef;
+}
+
+.social li a::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1em;
+  height: 1em;
+  font: normal 2rem/1em "FontAwesome";
+}
+
+.social li a[rel="home"]::before { content: '\f015'; }
+.social li a[rel="twitter"]::before { content: '\f099'; }
+
+footer {
+  margin: 0;
+  padding: 1rem 0 4rem;
+  text-align: center;
+}
+
+footer img {
+  height: 4rem;
+  width: auto;
+  margin: 0 1rem;
+}
