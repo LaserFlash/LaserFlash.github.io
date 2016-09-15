@@ -1,5 +1,4 @@
-# Hello, Summer of Tech!
+#My webpage hosted on github
 
-This is an example page for the Summer of Tech git tutorial.
+Will use for displaying of current and paste projects as well as some information about myself
 
-Feel free to fork and modify it as you see fit.
