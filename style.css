@@ -17,19 +17,6 @@ header {
   padding: 2rem;
 }
 
-header p:nth-child(1) {
-  font-weight: bold;
-  font-size: 2rem;
-  margin: 0;
-}
-
-header p:nth-child(2) {
-  margin: .5rem 0 0;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-}
-
 main {
   background-color: white;
   color: black;
@@ -42,19 +29,51 @@ h1 {
   text-align: center;
 }
 
-main img {
-  display: block;
-  width: 12rem;
-  max-width: 50%;
+#me {
+  display: block;;
+  height: auto;
+}
+#imgMe{
+  width: 19rem;
   margin: 0 auto 1rem;
   height: auto;
   border-radius: 50%;
 }
 
-main p {
+#meImg{
+  float: left;
+  padding: 2rem 0 4rem;
+}
+
+#mrContent{
+  float: right;
   width: 30rem;
   max-width: 80%;
+  padding: 2rem 0 4rem;
   margin: 0 auto 1rem;
+}
+
+#personal{
+  float: left;
+  display: block;
+  height: auto;
+}
+
+#personal.p{
+    float:right;
+}
+
+#uni{
+  display: block;
+  float: right;
+  height: auto;
+}
+#uni.p{
+    float:right;
+}
+
+.projectImg{
+  float: left;;
 }
 
 .social {
