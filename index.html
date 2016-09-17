@@ -9,7 +9,26 @@
 </head>
 
 <body class="w3-black">
+    <nav class="w3-sidenav w3-dark-grey w3-card-2 w3-animate-left" style="display:none" id="mySidenav">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-large w3-hover-red">Close &times;</a>
+        <a class="w3-hover-light-green w3-teal" href="index.html">Home</a>
+        <div class="w3-dropdown-hover w3-hover-light-green">
+            <a class="w3-hover-light-green" href="personalProjects.html">Personal Projects <i class="fa fa-caret-down"></i></a>
+            <div class="w3-dropdown-content w3-grey w3-card-4">
+                <a class="w3-hover-light-green" href="https://github.com/papasele/AVCteam1">AVC</a>
+                <a class="w3-hover-light-green" href="https://github.com/LaserFlash/ENGR110-SCARA">SCARA</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover w3-hover-light-green">
+            <a class="w3-hover-light-green " href="uniProjects.html">University Projects <i class="fa fa-caret-down"></i></a>
+            <div class="w3-dropdown-content w3-grey w3-card-4">
+                <a class="w3-hover-light-green" href="https://github.com/LaserFlash/LaserFlash.github.io">Website</a>
+            </div>
+        </div>
+        <a class="w3-hover-light-green " href="https://github.com/LaserFlash">GitHub</a>
+    </nav>
     <header class="w3-container w3-theme w3-padding w3-black">
+        <span class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
         <div class="w3-center">
             <h4>Hello</h4>
             <h1 class="w3-xxxlarge w3-animate-bottom">I'm Bryn Bennett "LaserFlash"</h1>
@@ -63,6 +82,15 @@
             <li><a rel="github" href="http://github.com/LaserFlash">My GitHub</a></li>
         </ul>
     </footer>
+    <script>
+        function w3_open() {
+            document.getElementById("mySidenav").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidenav").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
