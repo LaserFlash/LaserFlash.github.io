@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Bryn Bennett "Laser"</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Covered+By+Your+Grace" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <header>
-      <p>Hello</p>
-      <p>My name is</p>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+
+<body class="w3-black">
+    <header class="w3-container w3-theme w3-padding w3-black">
+        <div class="w3-center">
+            <h4>Hello</h4>
+            <h1 class="w3-xxxlarge w3-animate-bottom">I'm Bryn Bennett "LaserFlash"</h1>
+        </div>
     </header>
-    <main>
-      <div id="me">
-        <div id="meImg">
-          <img src="me.jpg" alt="Characture of Bryn Bennett" id="imgMe">
+    <main class="w3-container w3-section w3-teal">
+
+        <div class="w3-card-12 w3-light-grey w3-section w3-center">
+            <div class="w3-container">
+                <img src="me.jpg" alt="Avatar" class="w3-circle w3-section w3-margin-right" style="width: 20%" />
+
+                <p>
+                    I am a first year Software Engineering student at Victoria University. <br />
+                    As well as spending a large amount of time completing university projects I develop and work on some of my own personal projects. <br />
+                    Some of my other passions include: yachting, canoepolo, and gaming.
+                </p>
+
+            </div>
         </div>
-        <div id="meContent">
-          <h1>Bryn Bennett</h1>
-          <p>
-            I am a first year Software Engineering student at Victoria University </br>
-            I should say smart thing</br>
-            On a more serious note, I have had an interest in software for a while know, hence why I'm studying it.</br>
-            But I keep my other interests as well, with yachting being my main other commitment.
-          </p>
+
+        <div class="w3-half w3-row-padding">
+            <a href="personalProjects.html">
+                <div class="w3-card-12 w3-light-grey w3-section w3-hover-shadow w3-hover-light-green">
+                    <div class="w3-container">
+                        <div class="w3-container w3-center">
+                            <img src="code.png" alt="My personal projects" class="w3-circle w3-section" style="width:20%" />
+                            <p>
+                                My Personal Projects
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
-  </div>
-  <div id="personal">
-    <div class="projectImg">
-      <img src="code.png" >
-    </div
-    <p>
-      My personal projects
-    </p>
-  </div>
-  <div id="uni">
-    <div class="projectImg">
-      <img src="uni.png" class="projectImg">
-    </div>
-    <p>
-      My uni projects
-    </p>
-  </div>
-  <div>
-      <ul class="social">
-        <li><a rel="github" href="http://github.com/LaserFlash">My GitHub</a></li>
-      </ul>
-    </div>
+        <div class="w3-half w3-row-padding">
+            <a href="uniProjects.html">
+                <div class="w3-card-12 w3-light-grey w3-section w3-hover-shadow w3-hover-light-green">
+                    <div class="w3-container">
+                        <div class="w3-container w3-center">
+                            <img src="uni.png" alt="My university projects" class="w3-circle w3-section" style="width:20%" />
+                            <p>
+                                My University Projects
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
     </main>
-    <footer>
+    <footer class=" w3-container w3-black w3-section">
+      <ul class="social">
+          <li><a rel="github" href="http://github.com/LaserFlash">My GitHub</a></li>
+      </ul>
     </footer>
-  </body>
+</body>
 </html>
