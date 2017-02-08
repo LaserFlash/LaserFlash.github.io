@@ -154,3 +154,43 @@ footer {
   background-image: url(images/footer-background.png);
   background-size: cover;
 }
+
+.social {
+  width      : 15rem;
+  max-width  : 80%;
+  margin     : 1rem auto 0;
+  padding    : 0;
+  list-style : none;
+}
+
+.social li {
+  margin  : 0;
+  padding : 0;
+}
+
+.social li a {
+  display        : block;
+  position       : relative;
+  padding-left   : 3rem;
+  color          : #999;
+  vertical-align : middle;
+  line-height    : 2rem;
+  transition     : color 0.2s ease;
+}
+
+.social li a:hover {
+  color : #00aeef;
+}
+
+.social li a::before {
+  position : absolute;
+  top      : 0;
+  left     : 0;
+  width    : 1em;
+  height   : 1em;
+  font     : normal 2rem/1em "FontAwesome";
+}
+
+.social li a[rel="github"]::before {
+  content : '\f09b';
+}
