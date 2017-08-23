@@ -12,3 +12,7 @@
 ## Development Branch
 * Trying new styles and layouts
 * Following material guidlines / approach
+
+## Fire Branch
+* Reimplementing to use firebase to get content
+* Eventually allow for logging in to add content
