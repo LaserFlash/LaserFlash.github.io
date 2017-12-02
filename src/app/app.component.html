@@ -1,1 +1,38 @@
+<div style="background:#37474f;">
+<mat-toolbar color="primary">
+  <span id="menuSpacer"></span>
+  <span><img id="menuLogo" src="assets/images/logo.png" alt="Bryn Bennett 'LaserFlash'"/></span>
+  <span id="menuSpacer"></span>
+  <span id="menuTitle"><h1>{{title}}</h1></span>
+  <!-- This fills the remaining space of the current row -->
+  <span class="toolbar-spacer"></span>
+  <span fxHide fxShow.gt-xs>
+      <nav mat-tab-nav-bar>
+        <a mat-tab-link
+            *ngFor="let routeLink of routeLinks; let i = index"
+            [routerLink]="routeLink.link"
+            routerLinkActive #rla="routerLinkActive"
+            [active]="rla.isActive">
+            {{routeLink.label}}
+        </a>
+      </nav>
+    </span>
+  <mat-toolbar-row fxHide="false" fxHide.gt-xs>
+    <span>
+    <nav mat-tab-nav-bar >
+      <a mat-tab-link style="width:50%;"
+          *ngFor="let routeLink of routeLinks; let i = index"
+          [routerLink]="routeLink.link"
+          routerLinkActive #rla="routerLinkActive"
+          [active]="rla.isActive">
+          {{routeLink.label}}
+      </a>
+    </nav>
+  </span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div style="height:60px;" fxHide fxShow.gt-xs></div>
+<div style="height:60px;" fxHide="false" fxHide.gt-xs></div>
 
+<router-outlet></router-outlet>.
+</div>

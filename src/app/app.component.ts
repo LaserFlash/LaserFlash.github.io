@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Bryn Bennett "LaserFlash"';
+
+  routeLinks = [
+    { label: 'Portfolio', link: 'portfolio' },
+    { label: 'About', link: 'about' },
+  ];
 }
