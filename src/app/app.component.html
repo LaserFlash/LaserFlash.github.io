@@ -1,12 +1,13 @@
 <div style="background:#37474f;">
-<mat-toolbar color="primary">
-  <span id="menuSpacer"></span>
-  <span><img id="menuLogo" src="assets/images/logo.png" alt="Bryn Bennett 'LaserFlash'"/></span>
-  <span id="menuSpacer"></span>
-  <span id="menuTitle"><h1>{{title}}</h1></span>
-  <!-- This fills the remaining space of the current row -->
-  <span class="toolbar-spacer"></span>
-  <span fxHide fxShow.gt-xs>
+  <mat-toolbar color="primary">
+    <span fxHide="false" fxHide.gt-xs fxFlex></span>
+    <span class="menuSpacer"></span>
+    <span><img class="menuLogo" src="assets/images/logo.png" alt="Bryn Bennett 'LaserFlash'"/></span>
+    <span class="menuSpacer"></span>
+    <span class="menuTitle"><h1>{{title}}</h1></span>
+    <!-- This fills the remaining space of the current row -->
+    <span fxFlex></span>
+    <span fxHide fxShow.gt-xs>
       <nav mat-tab-nav-bar>
         <a mat-tab-link
             *ngFor="let routeLink of routeLinks; let i = index"
@@ -17,22 +18,25 @@
         </a>
       </nav>
     </span>
-  <mat-toolbar-row fxHide="false" fxHide.gt-xs>
-    <span>
-    <nav mat-tab-nav-bar >
-      <a mat-tab-link style="width:50%;"
-          *ngFor="let routeLink of routeLinks; let i = index"
-          [routerLink]="routeLink.link"
-          routerLinkActive #rla="routerLinkActive"
-          [active]="rla.isActive">
-          {{routeLink.label}}
-      </a>
-    </nav>
-  </span>
-  </mat-toolbar-row>
-</mat-toolbar>
-<div style="height:60px;" fxHide fxShow.gt-xs></div>
-<div style="height:60px;" fxHide="false" fxHide.gt-xs></div>
+    <mat-toolbar-row style="height:60px;" fxHide="false" fxHide.gt-xs>
+      <span fxFlex></span>
+        <span>
+          <nav mat-tab-nav-bar >
+            <a mat-tab-link style="width:50%;"
+                *ngFor="let routeLink of routeLinks; let i = index"
+                [routerLink]="routeLink.link"
+                routerLinkActive #rla="routerLinkActive"
+                [active]="rla.isActive">
+                {{routeLink.label}}
+            </a>
+          </nav>
+        </span>
+      <span fxFlex></span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div style="height:60px;" fxShow></div>
+  <div style="height:60px;" fxHide.gt-xs></div>
+  <div style="height:10px;"></div>
 
-<router-outlet></router-outlet>.
+  <router-outlet></router-outlet>.
 </div>

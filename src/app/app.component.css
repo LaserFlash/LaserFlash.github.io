@@ -10,20 +10,17 @@ mat-toolbar.mat-toolbar {
 .mat-toolbar {
     min-height: 56px;
 }
-.toolbar-spacer {
-  flex: 1 1 auto;
+
+.menuSpacer {
+  min-width: 10px;
 }
 
-#menuSpacer {
-  width: 10px;
-}
-
-#menuLogo {
+.menuLogo {
   height: 50px;
   vertical-align: middle;
 }
 
-#menuTitle {
+.menuTitle {
   text-align: center;
   font-weight: 300;
 }
