@@ -2,7 +2,7 @@
     "name": "LaserFlash",
     "icons": [
         {
-            "src": "assets/favicon/android-chrome-144x144.png",
+            "src": "assets/favicon/android-chrome-144x144.webp",
             "sizes": "144x144",
             "type": "image/png"
         }
