@@ -15,10 +15,10 @@
             {{item.blurb}}
           </p>
         </mat-card-content>
-          <mat-card-actions align="end">
-            <a *ngIf="item.viewButton" href="{{item.viewButton.link}}" mat-button> {{item.viewButton.name}} </a>
-            <a *ngIf="item.sourceButton" href="{{item.sourceButton.link}}" mat-button> {{item.sourceButton.name}} </a>
-          </mat-card-actions>
+        <mat-card-actions align="end">
+          <a color="accent" *ngIf="item.viewButton" href="{{item.viewButton.link}}" mat-button> {{item.viewButton.name}} </a>
+          <a color="accent" *ngIf="item.sourceButton" href="{{item.sourceButton.link}}" mat-button> {{item.sourceButton.name}} </a>
+        </mat-card-actions>
       </mat-card>
     </div>
 
