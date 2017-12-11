@@ -1,7 +1,10 @@
 .card-deck-container {
   width: 100%;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: -36px;
 }
 
 .card-container {
-  margin: 0px 10px 20px 10px;
+  margin: 0px 8px 16px 8px;
 }
