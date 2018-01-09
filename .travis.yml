@@ -11,8 +11,9 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
+  target_branch: master
+  fqdn: laserflash.tk
   on:
-    branch: master
     branches:
       only:
          - webDev
