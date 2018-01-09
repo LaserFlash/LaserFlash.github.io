@@ -13,7 +13,6 @@ deploy:
   skip_cleanup: true
   target_branch: master
   fqdn: laserflash.tk
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
   on:
-    branches:
-      only:
-         - webDev
+    branche: webDev
