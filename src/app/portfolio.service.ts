@@ -26,7 +26,7 @@ export class PortfolioService {
 
     this.portfolioItems.push(new PortfolioItem(
       'Portfolio Site',
-      'Construction and design of this website. This project tends to get bursts of updates as it is just worked on by me. It is regularly revisted however',
+      'Construction and design of this website. This project tends to get bursts of updates as it is just worked on by me. It is regularly revisited however',
       'assets/images/flatWebsite.png',
       new PortfolioButton('Source', 'https://github.com/LaserFlash/LaserFlash.github.io'),
       new PortfolioButton('View', 'https://laserflash.tk')
@@ -42,7 +42,7 @@ export class PortfolioService {
 
     this.portfolioItems.push(new PortfolioItem(
       'ENGR 101 Autonomous Vehicle',
-      'This was a group project, with the goal of designing and contructing a small autonomous vehicle to get through given sections of a maze.',
+      'This was a group project, with the goal of designing and constructing a small autonomous vehicle to get through given sections of a maze.',
       'assets/images/AVC.png',
       new PortfolioButton('Source', 'https://github.com/papasele/AVCteam1'),
       null
