@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PortfolioItem } from '../portfolioItem'
-import { PortfolioButton } from '../portfolioButton'
+import { PortfolioItem } from '../portfolioItem';
+import { PortfolioButton } from '../portfolioButton';
 
-import { PortfolioService } from '../portfolio.service'
+import { PortfolioService } from '../portfolio.service';
 
 @Component({
   selector: 'app-portfolio-view',
@@ -12,7 +12,7 @@ import { PortfolioService } from '../portfolio.service'
 })
 export class PortfolioViewComponent implements OnInit {
   items: PortfolioItem[];
-  constructor(portfolioService:PortfolioService) {
+  constructor(portfolioService: PortfolioService) {
     this.items = portfolioService.portfolioItems;
   }
 
