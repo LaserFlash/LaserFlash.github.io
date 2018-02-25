@@ -1,6 +1,7 @@
 {
   "name": "laser-flash.github.io",
   "version": "0.0.0",
+  "homepage": "https://laserflash.tk",
   "license": "MIT",
   "scripts": {
     "ng": "ng",

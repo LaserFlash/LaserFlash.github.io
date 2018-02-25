@@ -2,6 +2,10 @@ language: node_js
 node_js:
    - '8'
 
+cache:
+  directories:
+  - node_modules
+
 before_script:
    - npm install -g @angular/cli
 
@@ -10,10 +14,12 @@ script:
 
 deploy:
   provider: pages
+  local_dir: dist
   skip_cleanup: true
   target_branch: master
   fqdn: laserflash.tk
   github_token: $GITHUB_TOKEN
-  local_dir: dist
+  email: bryn.t.bennett@gmail.com
+  name: Bryn Bennett
   on:
     branch: webDev
