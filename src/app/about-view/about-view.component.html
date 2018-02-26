@@ -5,7 +5,11 @@
         <mat-card-title><h2>About</h2></mat-card-title>
         <mat-card-subtitle><h3>Bryn Bennett "LaserFlash"</h3></mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="assets/images/skiing.png"/>
+      <picture>
+        <source srcset="assets/images/skiing.webp" type="image/webp">
+        <source srcset="assets/images/skiing.png" type="image/jpeg"> 
+        <img mat-card-image src="assets/images/skiing.png" alt="Bryn skiing on Mt Ruapehu">
+      </picture>
       <mat-card-content>
         <h3>Me</h3>
         I am a second-year Software Engineering student at Victoria University.
