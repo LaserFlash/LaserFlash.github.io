@@ -25,6 +25,8 @@ import { PortfolioService } from './portfolio.service';
 
 import { AppRoutingModule } from './app-routing.module';
 
+import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+import { HammerConfig } from './hammer.config'
 import 'hammerjs';
 
 @NgModule({
@@ -46,7 +48,7 @@ import 'hammerjs';
     MatIconModule,
     MatCardModule,
   ],
-  providers: [PortfolioService],
+  providers: [PortfolioService, {provide: HAMMER_GESTURE_CONFIG, useClass: HammerConfig}],
   bootstrap: [AppComponent]
 })
 
