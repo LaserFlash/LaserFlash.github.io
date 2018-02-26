@@ -2,6 +2,9 @@
 ::-webkit-scrollbar { 
 	display: none;
 }
+html {
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+  }
 
 body, html{
 	background: #37474f;
