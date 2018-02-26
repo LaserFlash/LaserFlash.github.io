@@ -1,5 +1,4 @@
-<div style="background:#37474f;">
-  <mat-toolbar color="primary">
+<mat-toolbar color="primary">
     <span fxHide="false" fxHide.gt-xs fxFlex></span>
     <span class="menuSpacer"></span>
     <span>
@@ -40,9 +39,15 @@
       <span fxFlex></span>
     </mat-toolbar-row>
   </mat-toolbar>
+
+<mat-sidenav-container  style="background:#37474f;" class="content" fullscreen >
+
   <div style="height:60px;" fxShow></div>
   <div style="height:60px;" fxHide.gt-xs></div>
   <div style="height:10px;"></div>
 
-  <router-outlet></router-outlet>.
-</div>
+  <router-outlet></router-outlet>
+  <main [@routerTransition]="getState(o)">
+      <router-outlet #o="outlet"></router-outlet>
+  </main>
+</mat-sidenav-container>

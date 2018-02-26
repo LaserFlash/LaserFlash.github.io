@@ -6,8 +6,8 @@ import { AboutViewComponent } from './about-view/about-view.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/portfolio', pathMatch: 'full' },
-  { path: 'portfolio', component: PortfolioViewComponent },
-  { path: 'about', component: AboutViewComponent },
+  { path: 'portfolio', component: PortfolioViewComponent , data: { state: 'portfolio' }  },
+  { path: 'about', component: AboutViewComponent, data: { state: 'about' } },
   { path: '**', redirectTo: '/portfolio' },
 ];
 
