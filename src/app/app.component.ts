@@ -6,13 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { PortfolioViewComponent } from './portfolio-view/portfolio-view.component';
 import { AboutViewComponent } from './about-view/about-view.component';
 import { routerTransition } from './router.animations';
-
-@NgModule({
-  imports: [ BrowserModule, BrowserAnimationsModule, AppRoutingModule ],
-  declarations: [ AppComponent, PortfolioViewComponent, AboutViewComponent ],
-  bootstrap: [ AppComponent ]
-})
-
 @Component({
   selector: 'app-root',
   animations: [ routerTransition ],
