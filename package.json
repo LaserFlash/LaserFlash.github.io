@@ -30,6 +30,7 @@
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.3",
     "firebase": "^4.10.1",
+    "hammerjs": "^2.0.8",
     "imagemin": "^5.3.1",
     "imagemin-webp": "^4.1.0",
     "moment": "^2.20.1",

@@ -25,6 +25,8 @@ import { PortfolioService } from './portfolio.service';
 
 import { AppRoutingModule } from './app-routing.module';
 
+import 'hammerjs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +49,8 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [PortfolioService],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule {
   constructor(overlayContainer: OverlayContainer) {
     overlayContainer.getContainerElement().classList.add('my-app-theme');
