@@ -6,9 +6,10 @@
 }
 
 .card-container {
-  margin: 0px 8px 16px 8px;
+  margin: 0px 8px 16px 8px;  
 }
 
 .mat-card-image {
   margin-top: -24px !important;
 }
+
