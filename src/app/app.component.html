@@ -41,10 +41,11 @@
   </mat-toolbar>
 
 <mat-sidenav-container  style="background:#37474f;" fullscreen >
-
+  <div id="scrollId"></div>
   <div style="height:60px;" fxShow></div>
   <div style="height:60px;" fxHide.gt-xs></div>
   <div style="height:10px;"></div>
+  
 
   <main [@routerTransition]="getState(o)"  class="content" (swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)">
       <router-outlet #o="outlet"></router-outlet>

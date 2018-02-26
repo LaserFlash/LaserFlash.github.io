@@ -1,4 +1,4 @@
-import { Component, NgModule, EventEmitter } from '@angular/core';
+import { Component, NgModule, EventEmitter, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -7,17 +7,14 @@ import { PortfolioViewComponent } from './portfolio-view/portfolio-view.componen
 import { AboutViewComponent } from './about-view/about-view.component';
 import { routerTransition } from './router.animations';
 
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-root',
   animations: [ routerTransition ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  constructor(private _router: Router ) {
-    this.router = _router;
-  }
+export class AppComponent implements OnInit {
   router: Router;
 
   title = 'Bryn Bennett "LaserFlash"';
@@ -28,6 +25,26 @@ export class AppComponent {
   ];
 
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
+
+  constructor(private _router: Router ) {
+    this.router = _router;
+  }
+
+  ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+          return;
+      }
+      const element = document.getElementById('scrollId');
+      setTimeout(function(){
+        element.scrollIntoView();
+        window.scrollTo(0, 0);
+    }, 300);
+
+  });
+  }
+
+
 
   swipe(action = this.SWIPE_ACTION.RIGHT) {
       const pos: any = this.routeLinks.filter((item) => {if (item.link === this.router.url) {return item; } });
