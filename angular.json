@@ -45,18 +45,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular6Base:build"
+            "browserTarget": "PortfolioSite:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Angular6Base:build:production"
+              "browserTarget": "PortfolioSite:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular6Base:build"
+            "browserTarget": "PortfolioSite:build"
           }
         },
         "test": {
@@ -80,7 +80,7 @@
         }
       }
     },
-    "Angular6Base-e2e": {
+    "PortfolioSite-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -88,11 +88,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Angular6Base:serve"
+            "devServerTarget": "PortfolioSite:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular6Base:serve:production"
+              "devServerTarget": "PortfolioSite:serve:production"
             }
           }
         },
