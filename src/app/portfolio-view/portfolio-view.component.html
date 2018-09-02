@@ -1,14 +1,14 @@
-<div fxLayout="row" style="padding-left: 10px; padding-right: 10px;">
-  <div fxFlex.gt-lg="calc(50% -1280px)" fxFlex.lt-xl="10" fxFlex="0"></div>
-  <div fxFlex.gt-lg="1280px" fxFlex fxLayoutWrap class="card-deck-container">
-    <div fxLayout="col" fxFlex.gt-md="calc(30% - 20px)" fxFlex.gt-sm="calc(30% - 20px)" fxFlex.gt-xs="calc(50% - 20px)" fxFlex.xs="calc(100% - 20px)" class="card-container" *ngFor="let item of items">
+<div fxLayout="row" style="padding-left: 2px; padding-right: 2px;">
+  <div fxFlex.gt-md="calc(50% -1280px)" fxFlex="1"></div>
+  <div fxFlex.gt-md="1280px" fxLayout="row wrap" fxLayoutWrap class="card-deck-container">
+    <div class="card-container" fxFlex *ngFor="let item of items">
 
-      <mat-card fxFlex="grow">
-          <picture>
-              <source srcset="{{item.image}}.webp" type="image/webp">
-              <source srcset="{{item.image}}.png" type="image/jpeg"> 
-              <img mat-card-image src="{{item.image}}.png" alt="Image indicating project type">
-            </picture>
+      <mat-card class="min-card-width" fxFlex.gt-md="calc(30% - 20px)" fxFlex="grow">
+        <picture>
+          <source srcset="{{item.image}}.webp" type="image/webp">
+          <source srcset="{{item.image}}.png" type="image/jpeg">
+          <img mat-card-image src="{{item.image}}.png" alt="Image indicating project type">
+        </picture>
         <mat-card-header>
           <mat-card-title>
             <h3>{{item.title}}</h3>
@@ -27,5 +27,5 @@
     </div>
 
   </div>
-  <div fxFlex.gt-lg="calc(50% -1280px)" fxFlex.lt-xl="10" fxFlex="0"></div>
+  <div fxFlex.gt-md="calc(50% -1280px)" fxFlex="1"></div>
 </div>

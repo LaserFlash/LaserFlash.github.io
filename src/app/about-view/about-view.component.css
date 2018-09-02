@@ -1,0 +1,4 @@
+.card-width {
+  min-width: 20em !important;
+  max-width: 80em !important;
+}

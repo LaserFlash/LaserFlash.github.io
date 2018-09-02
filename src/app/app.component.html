@@ -1,10 +1,11 @@
 <mat-toolbar color="primary">
+  <mat-toolbar-row>
     <span fxHide="false" fxHide.gt-xs fxFlex></span>
     <span class="menuSpacer"></span>
     <span>
       <picture>
         <source srcset="assets/images/logo.webp" type="image/webp">
-        <source srcset="assets/images/logo.png" type="image/jpeg"> 
+        <source srcset="assets/images/logo.png" type="image/jpeg">
         <img class="menuLogo" src="assets/images/logo.png" alt="Bryn Bennett 'LaserFlash'">
       </picture>
     </span>
@@ -23,9 +24,10 @@
         </a>
       </nav>
     </span>
-    <mat-toolbar-row style="height:60px;" fxHide="false" fxHide.gt-xs>
-      <span fxFlex></span>
-        <span>
+  </mat-toolbar-row>
+  <mat-toolbar-row style="height:60px;" fxHide="false" fxHide.gt-xs>
+    <span fxFlex></span>
+    <span>
           <nav mat-tab-nav-bar >
             <a mat-tab-link style="width:50%;"
                 *ngFor="let routeLink of routeLinks; let i = index"
@@ -36,18 +38,18 @@
             </a>
           </nav>
         </span>
-      <span fxFlex></span>
-    </mat-toolbar-row>
-  </mat-toolbar>
+    <span fxFlex></span>
+  </mat-toolbar-row>
+</mat-toolbar>
 
-<mat-sidenav-container  style="background:#37474f;" fullscreen >
+<mat-sidenav-container style="background:#37474f;" fullscreen>
   <div id="scrollId"></div>
   <div style="height:60px;" fxShow></div>
   <div style="height:60px;" fxHide.gt-xs></div>
   <div style="height:10px;"></div>
-  
 
-  <main [@routerTransition]="getState(o)"  class="content" (swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)">
-      <router-outlet #o="outlet"></router-outlet>
+
+  <main [@routerTransition]="getState(o)" class="content" (swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)">
+    <router-outlet #o="outlet"></router-outlet>
   </main>
 </mat-sidenav-container>
