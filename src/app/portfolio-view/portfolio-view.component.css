@@ -1,8 +1,5 @@
 .card-deck-container {
   width: 100%;
-  margin-left: -8px;
-  margin-right: -8px;
-  margin-bottom: -36px;
 }
 
 .card-container {
@@ -19,4 +16,14 @@
 
 .card-image {
   border-radius: 4px !important;
+}
+
+.card-content {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px){
+  .card-container {
+    margin: 0px 0px 8px 0px;
+  }
 }

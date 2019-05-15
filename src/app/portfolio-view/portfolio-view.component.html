@@ -1,5 +1,6 @@
 <div fxLayout="row" style="padding-left: 2px; padding-right: 2px;">
-  <div fxFlex.gt-md="calc(50% -1280px)" fxFlex="1"></div>
+  <div fxFlex.gt-md="calc(50% -1280px)" fxFlex="0"></div>
+
   <div fxFlex.gt-md="1280px" fxLayout="row wrap" fxLayoutWrap class="card-deck-container">
     <div class="card-container" fxFlex *ngFor="let item of items">
 
@@ -14,12 +15,10 @@
             <h3>{{item.title}}</h3>
           </mat-card-title>
         </mat-card-header>
-        <mat-card-content>
-          <p>
+        <mat-card-content class="card-content">
             {{item.blurb}}
-          </p>
         </mat-card-content>
-        <mat-card-actions align="end">
+        <mat-card-actions align="end" class="card-content">
           <a color="accent" *ngIf="item.viewButton" href="{{item.viewButton.link}}" mat-button> {{item.viewButton.name}} </a>
           <a color="accent" *ngIf="item.sourceButton" href="{{item.sourceButton.link}}" mat-button> {{item.sourceButton.name}} </a>
         </mat-card-actions>
@@ -27,7 +26,7 @@
     </div>
 
   </div>
-  <div fxFlex.gt-md="calc(50% -1280px)" fxFlex="1"></div>
+  <div fxFlex.gt-md="calc(50% -1280px)" fxFlex="0"></div>
 </div>
 
 <app-code-list></app-code-list>

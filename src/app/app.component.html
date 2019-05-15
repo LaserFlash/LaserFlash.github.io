@@ -10,17 +10,15 @@
       </picture>
     </span>
     <span class="menuSpacer"></span>
-    <span class="menuTitle"><h1>{{title}}</h1></span>
+    <span class="menuTitle">
+      <h1>{{title}}</h1>
+    </span>
     <!-- This fills the remaining space of the current row -->
     <span fxFlex></span>
     <span fxHide fxShow.gt-xs>
       <nav mat-tab-nav-bar>
-        <a mat-tab-link
-            *ngFor="let routeLink of routeLinks; let i = index"
-            [routerLink]="routeLink.link"
-            routerLinkActive #rla="routerLinkActive"
-            [active]="rla.isActive">
-            {{routeLink.label}}
+        <a mat-tab-link *ngFor="let routeLink of routeLinks; let i = index" [routerLink]="routeLink.link" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+          {{routeLink.label}}
         </a>
       </nav>
     </span>
@@ -28,28 +26,23 @@
   <mat-toolbar-row style="height:60px;" fxHide="false" fxHide.gt-xs>
     <span fxFlex></span>
     <span>
-          <nav mat-tab-nav-bar >
-            <a mat-tab-link style="width:50%;"
-                *ngFor="let routeLink of routeLinks; let i = index"
-                [routerLink]="routeLink.link"
-                routerLinkActive #rla="routerLinkActive"
-                [active]="rla.isActive">
-                {{routeLink.label}}
-            </a>
-          </nav>
-        </span>
+      <nav mat-tab-nav-bar>
+        <a mat-tab-link style="width:50%;" *ngFor="let routeLink of routeLinks; let i = index" [routerLink]="routeLink.link" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+          {{routeLink.label}}
+        </a>
+      </nav>
+    </span>
     <span fxFlex></span>
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-sidenav-container style="background:#37474f;" fullscreen>
+<div style="background:#37474f;">
+
   <div id="scrollId"></div>
   <div style="height:60px;" fxShow></div>
-  <div style="height:60px;" fxHide.gt-xs></div>
-  <div style="height:10px;"></div>
-
+  <div style="height:54px;" fxHide.gt-xs></div>
 
   <main [@routerTransition]="getState(o)" class="content" (swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)">
     <router-outlet #o="outlet"></router-outlet>
   </main>
-</mat-sidenav-container>
+</div>

@@ -13,7 +13,7 @@ export class PortfolioService {
       'This is a web app for recording the usage of boats and any issues or breakages they may have. This app and its deriviations are used by WYST, TRIYA, NPYC, and QCYC to satisfy Health and Safety requirements from Yachting New Zealand.',
       'assets/images/nespresso',
       new PortfolioButton('Source', 'https://github.com/LaserFlash/WYST-Maintenance'),
-      new PortfolioButton('View', 'https://wyst-stuff.tk')
+      new PortfolioButton('Website', 'https://wyst-stuff.tk')
     ));
 
     this.portfolioItems.push(new PortfolioItem(
@@ -21,7 +21,7 @@ export class PortfolioService {
       'Construction and design of this website. This project tends to get bursts of updates as it is just worked on by me. It is regularly revisited however',
       'assets/images/flatWebsite',
       new PortfolioButton('Source', 'https://github.com/LaserFlash/LaserFlash.github.io'),
-      new PortfolioButton('View', 'https://laserflash.tk')
+      new PortfolioButton('Website', 'https://laserflash.tk')
     ));
 
     this.portfolioItems.push(new PortfolioItem(

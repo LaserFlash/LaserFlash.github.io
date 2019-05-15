@@ -44,3 +44,8 @@ mat-toolbar.mat-toolbar {
 /deep/ .mat-ink-bar {
   background-color: #087f23 !important;
 }
+
+/deep/ .mat-app-background{
+  margin-right: 0px;
+  margin-left: 0px;
+}
