@@ -10,9 +10,13 @@
 }
 
 .mat-card-image {
-  margin-top: -24px !important;
+  margin-top: -16px !important;
 }
 
 .min-card-width {
   min-width: 20em !important;
+}
+
+.card-image {
+  border-radius: 4px !important;
 }

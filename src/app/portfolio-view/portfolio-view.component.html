@@ -7,7 +7,7 @@
         <picture>
           <source srcset="{{item.image}}.webp" type="image/webp">
           <source srcset="{{item.image}}.png" type="image/jpeg">
-          <img mat-card-image src="{{item.image}}.png" alt="Image indicating project type">
+          <img class="card-image" mat-card-image src="{{item.image}}.png" alt="Image indicating project type">
         </picture>
         <mat-card-header>
           <mat-card-title>
@@ -29,3 +29,5 @@
   </div>
   <div fxFlex.gt-md="calc(50% -1280px)" fxFlex="1"></div>
 </div>
+
+<app-code-list></app-code-list>

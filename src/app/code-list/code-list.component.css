@@ -1,0 +1,23 @@
+.code-list-container{
+  margin-top: 48px;
+  width: 100%;
+  background-color: #1c313a;
+}
+
+.code-icons{
+  width: 80%;
+  margin: 0 auto;
+  background-color: #1c313a !important;
+  text-align: center;
+}
+
+.heading {
+  justify-content: center;
+  background-color: #1c313a !important;
+  color: white;
+}
+
+.title-center {
+  flex: 1 1 auto;
+  text-align: center;
+}

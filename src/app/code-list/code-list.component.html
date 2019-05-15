@@ -1,0 +1,8 @@
+<div class="code-list-container heading">
+  <mat-toolbar class="heading">
+    <span class="title-center">Languages & Frameworks</span>
+  </mat-toolbar>
+  <div fxLayout="row wrap" fxLayoutAlign="center" fxLayoutWrap class="code-icons">
+    <app-language-icon  *ngFor="let icon of iconList" [svgIconName]="icon.svgIconName" [svgIconPath]="icon.svgIconPath" [text]="icon.text"></app-language-icon>
+  </div>
+</div>
