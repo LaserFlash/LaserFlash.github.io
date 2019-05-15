@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CodeListComponent implements OnInit {
 
-  private iconList = [
+  iconList = [
     {
       svgIconName: 'firebase',
       svgIconPath: '../assets/images/language-icons/firebase.svg',
