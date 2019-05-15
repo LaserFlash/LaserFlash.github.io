@@ -9,19 +9,11 @@ export class PortfolioService {
   public portfolioItems: PortfolioItem[]= [];
   constructor() {
     this.portfolioItems.push(new PortfolioItem(
-      'U23 Squad Breakages',
-      'Data base type thing using Angular5 and FireBase, is used to keep track of maintenance for the Wellington Youth Sailing Trust boats.',
+      'Boat Logging',
+      'This is a web app for recording the usage of boats and any issues or breakages they may have. This app and its deriviations are used by WYST, TRIYA, NPYC, and QCYC to satisfy Health and Safety requirements from Yachting New Zealand.',
       'assets/images/nespresso',
       new PortfolioButton('Source', 'https://github.com/LaserFlash/WYST-Maintenance'),
       new PortfolioButton('View', 'https://wyst-stuff.tk')
-    ));
-
-    this.portfolioItems.push(new PortfolioItem(
-      'DimThing',
-      'Program that allows for further dimming of screen through the use of a transparent overlay. Has support for keyboard shortcuts to adjust dimness and toggle immersive mode on or off.',
-      'assets/images/DimThing',
-      new PortfolioButton('Source', 'https://github.com/LaserFlash/DimThing'),
-      null
     ));
 
     this.portfolioItems.push(new PortfolioItem(
@@ -30,6 +22,14 @@ export class PortfolioService {
       'assets/images/flatWebsite',
       new PortfolioButton('Source', 'https://github.com/LaserFlash/LaserFlash.github.io'),
       new PortfolioButton('View', 'https://laserflash.tk')
+    ));
+
+    this.portfolioItems.push(new PortfolioItem(
+      'DimThing',
+      'Program that allows for further dimming of screen through the use of a transparent overlay. Has support for keyboard shortcuts to adjust dimness and toggle immersive mode on or off.',
+      'assets/images/DimThing',
+      new PortfolioButton('Source', 'https://github.com/LaserFlash/DimThing'),
+      null
     ));
 
     this.portfolioItems.push(new PortfolioItem(

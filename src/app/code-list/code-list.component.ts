@@ -32,6 +32,11 @@ export class CodeListComponent implements OnInit {
       svgIconName: 'java',
       svgIconPath: '../assets/images/language-icons/java.svg',
       text: 'Java'
+    },
+    {
+      svgIconName: 'git',
+      svgIconPath: '../assets/images/language-icons/git.svg',
+      text: 'Git'
     }
   ]
   constructor() { }

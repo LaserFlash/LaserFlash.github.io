@@ -2,3 +2,7 @@
   min-width: 20em !important;
   max-width: 80em !important;
 }
+
+.about-content{
+  font-size: 18px;
+}
