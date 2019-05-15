@@ -3,7 +3,7 @@
   <div fxFlex.gt-md="1280px" fxLayout="row wrap" fxLayoutWrap class="card-deck-container">
     <div class="card-container" fxFlex *ngFor="let item of items">
 
-      <mat-card class="min-card-width" fxFlex.gt-md="calc(30% - 20px)" fxFlex="grow">
+      <mat-card class="card-width" fxFlex.gt-md="calc(30% - 20px)" fxFlex="grow">
         <picture>
           <source srcset="{{item.image}}.webp" type="image/webp">
           <source srcset="{{item.image}}.png" type="image/jpeg">
