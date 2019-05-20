@@ -1,6 +1,6 @@
 # My webpage hosted on github
 
-[![Build Status](https://travis-ci.org/LaserFlash/LaserFlash.github.io.svg?branch=webDev)](https://travis-ci.org/LaserFlash/LaserFlash.github.io)
+[![Build Status](https://travis-ci.org/LaserFlash/LaserFlash.github.io.svg?branch=webDev)](https://travis-ci.org/LaserFlash/LaserFlash.github.io) [![Greenkeeper badge](https://badges.greenkeeper.io/LaserFlash/LaserFlash.github.io.svg)](https://greenkeeper.io/)
 
 ## Purpose
 
