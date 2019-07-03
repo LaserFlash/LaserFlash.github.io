@@ -29,7 +29,7 @@ export class PortfolioService {
       'A Java game built for SWEN222. This was worked on by a group of five while at Uni. The original idea was inspired by "The Binding Of Issac", a top down dungeon crawler. I was primarily in charge of designing the user interface, and implementing rendering of all entities and the world.',
       'assets/images/IZack',
       new PortfolioButton('Source', 'https://github.com/LaserFlash/The-Finding-Of-I-Zack'),
-      new PortfolioButton('Website', null)
+      null
     ));
 
     this.portfolioItems.push(new PortfolioItem(
