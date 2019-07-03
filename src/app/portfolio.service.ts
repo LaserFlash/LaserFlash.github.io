@@ -25,6 +25,14 @@ export class PortfolioService {
     ));
 
     this.portfolioItems.push(new PortfolioItem(
+      'The Finding of I, Zack',
+      'A Java game built for SWEN222. This was worked on by a group of five while at Uni. The original idea was inspired by "The Binding Of Issac", a top down dungeon crawler. I was primarily in charge of designing the user interface, and implementing rendering of all entities and the world.',
+      'assets/images/IZack',
+      new PortfolioButton('Source', 'https://github.com/LaserFlash/The-Finding-Of-I-Zack'),
+      new PortfolioButton('Website', null)
+    ));
+
+    this.portfolioItems.push(new PortfolioItem(
       'DimThing',
       'Program that allows for further dimming of screen through the use of a transparent overlay. Has support for keyboard shortcuts to adjust dimness and toggle immersive mode on or off.',
       'assets/images/DimThing',
@@ -47,5 +55,6 @@ export class PortfolioService {
       new PortfolioButton('Source', 'https://github.com/papasele/AVCteam1'),
       null
     ));
+
   }
 }
