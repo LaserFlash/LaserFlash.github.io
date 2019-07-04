@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from "@angular/common/http";
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -54,7 +55,11 @@ import { LanguageIconComponent } from './language-icon/language-icon.component';
     MatIconModule,
     MatCardModule,
   ],
-  providers: [PortfolioService, {provide: HAMMER_GESTURE_CONFIG, useClass: HammerConfig}],
+  providers: [
+    PortfolioService,
+    { provide: HAMMER_GESTURE_CONFIG, useClass: HammerConfig },
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 
