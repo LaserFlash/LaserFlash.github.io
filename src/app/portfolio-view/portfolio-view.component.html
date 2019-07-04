@@ -16,12 +16,12 @@
           </mat-card-title>
         </mat-card-header>
         <mat-card-content class="card-content">
-            {{item.blurb}}
+          {{item.blurb}}
         </mat-card-content>
-        <mat-card-actions align="end" class="card-content">
-          <a color="accent" *ngIf="item.viewButton" href="{{item.viewButton.link}}" mat-button> {{item.viewButton.name}} </a>
-          <a color="accent" *ngIf="item.sourceButton" href="{{item.sourceButton.link}}" mat-button> {{item.sourceButton.name}} </a>
-        </mat-card-actions>
+          <mat-card-actions align="end" class="card-content">
+            <a color="accent" *ngIf="item.viewButton" href="{{item.viewButton.link}}" mat-button> {{item.viewButton.name}} </a>
+            <a color="accent" *ngIf="item.sourceButton" href="{{item.sourceButton.link}}" mat-button> {{item.sourceButton.name}} </a>
+          </mat-card-actions>
       </mat-card>
     </div>
 
