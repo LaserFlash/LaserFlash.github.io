@@ -38,7 +38,7 @@ export class CodeListComponent implements OnInit {
       svgIconPath: '../assets/images/language-icons/git.svg',
       text: 'Git'
     }
-  ]
+  ];
   constructor() { }
 
   ngOnInit() { }

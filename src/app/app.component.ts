@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
           return;
       }
       const element = document.getElementById('scrollId');
-      setTimeout(function(){
+      setTimeout(function() {
         element.scrollIntoView();
         window.scrollTo(0, 0);
     }, 300);

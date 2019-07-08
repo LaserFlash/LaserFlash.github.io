@@ -6,7 +6,7 @@ import { PortfolioButton } from './portfolioButton';
 
 @Injectable()
 export class PortfolioService {
-  public portfolioItems: PortfolioItem[]= [];
+  public portfolioItems: PortfolioItem[] = [];
   constructor() {
     this.portfolioItems.push(new PortfolioItem(
       'Boat Logging',
