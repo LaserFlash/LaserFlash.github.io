@@ -12,7 +12,7 @@ export class PortfolioService {
       new PortfolioItem(
         "Steam Friends Theme",
         "A darker theme for the Steam Friends UI",
-        "assets/images/steam"
+        "assets/images/steam",
         new PortfolioButton(
           "Source",
           "https://github.com/LaserFlash/steam-friends-skin"
