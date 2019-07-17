@@ -1,30 +1,58 @@
 <div fxLayout="row" style="padding-left: 2px; padding-right: 2px;">
   <div fxFlex.gt-md="calc(50% -1280px)" fxFlex="0"></div>
 
-  <div fxFlex.gt-md="1280px" fxLayout="row wrap" fxLayoutWrap class="card-deck-container">
+  <div
+    fxFlex.gt-md="1280px"
+    fxLayout="row wrap"
+    fxLayoutWrap
+    class="card-deck-container"
+  >
     <div class="card-container" fxFlex *ngFor="let item of items">
-
-      <mat-card class="card-width" fxFlex.gt-md="calc(30% - 20px)" fxFlex="grow">
+      <mat-card
+        class="card-width"
+        fxFlex.gt-md="calc(30% - 20px)"
+        fxFlex="grow"
+      >
         <picture>
-          <source srcset="{{item.image}}.webp" type="image/webp">
-          <source srcset="{{item.image}}.png" type="image/jpeg">
-          <img class="card-image" mat-card-image src="{{item.image}}.png" alt="Image indicating project type">
+          <source srcset="{{item.image}}.webp" type="image/webp" />
+          <source srcset="{{item.image}}.png" type="image/jpeg" />
+          <img
+            class="card-image"
+            mat-card-image
+            src="{{ item.image }}.png"
+            alt="Image indicating project type"
+          />
         </picture>
         <mat-card-header>
           <mat-card-title>
-            <h3>{{item.title}}</h3>
+            <h3>{{ item.title }}</h3>
           </mat-card-title>
         </mat-card-header>
         <mat-card-content class="card-content">
-          {{item.blurb}}
+          <markdown ngPreserveWhitespaces>
+            {{ item.blurb }}
+          </markdown>
         </mat-card-content>
-          <mat-card-actions align="end" class="card-content">
-            <a color="accent" *ngIf="item.viewButton" href="{{item.viewButton.link}}" mat-button> {{item.viewButton.name}} </a>
-            <a color="accent" *ngIf="item.sourceButton" href="{{item.sourceButton.link}}" mat-button> {{item.sourceButton.name}} </a>
-          </mat-card-actions>
+        <mat-card-actions align="end" class="card-content">
+          <a
+            color="accent"
+            *ngIf="item.viewButton"
+            href="{{ item.viewButton.link }}"
+            mat-button
+          >
+            {{ item.viewButton.name }}
+          </a>
+          <a
+            color="accent"
+            *ngIf="item.sourceButton"
+            href="{{ item.sourceButton.link }}"
+            mat-button
+          >
+            {{ item.sourceButton.name }}
+          </a>
+        </mat-card-actions>
       </mat-card>
     </div>
-
   </div>
   <div fxFlex.gt-md="calc(50% -1280px)" fxFlex="0"></div>
 </div>
