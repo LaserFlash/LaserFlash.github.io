@@ -36,6 +36,7 @@
     "@angular-devkit/build-angular": "^0.801.0",
     "@angular/cli": "^8.1.0",
     "@angular/compiler-cli": "^8.2.0-next.0",
+    "codelyzer": "^5.1.0",
     "karma": "~4.1.0",
     "karma-chrome-launcher": "~3.0.0",
     "karma-coverage-istanbul-reporter": "~2.0.5",

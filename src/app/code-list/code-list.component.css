@@ -1,18 +1,18 @@
-.code-list-container{
+.code-list-container {
   padding-bottom: 48px;
   background-color: #1c313a;
 }
 
-.code-icons{
+.code-icons {
   width: 80%;
   margin: 0 auto;
-  background-color: #1c313a !important;
+  background-color: #1c313a;
   text-align: center;
 }
 
 .heading {
   justify-content: center;
-  background-color: #1c313a !important;
+  background-color: #1c313a;
   color: white;
 }
 
