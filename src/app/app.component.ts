@@ -19,7 +19,8 @@ export class AppComponent implements OnInit {
 
   inkColour = '#087f23';
 
-  title = 'Bryn Bennett "LaserFlash"';
+  titleFirst = 'Bryn Bennett';
+  titleSecond = '"LaserFlash"';
 
   routeLinks = [
     { label: 'Portfolio', link: '/portfolio' },
