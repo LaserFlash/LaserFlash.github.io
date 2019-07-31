@@ -21,6 +21,7 @@
     <nav mat-tab-nav-bar>
       <a
         mat-tab-link
+        backgroundColor="accent"
         *ngFor="let routeLink of routeLinks; let i = index"
         [routerLink]="routeLink.link"
         routerLinkActive
@@ -34,8 +35,7 @@
 </mat-toolbar>
 
 <div style="background:#37474f;">
-  <div id="scrollId"></div>
-  <div style="height:60px;" fxShow></div>
+  <div  id="scrollId" class="content-spacer"></div>
 
   <main
     [@routerTransition]="getState(o)"

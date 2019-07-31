@@ -1,73 +1,66 @@
+/* Full size toolbar for navigation */
 mat-toolbar.mat-toolbar {
   position: fixed;
   top: 0;
   right: 0;
-  left: 0;
-  z-index: 10;
+  z-index: 1;
   padding: 0 8px 0 8px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
-}
-.mat-toolbar {
-  min-height: 56px;
-}
-
-.menuSpacer {
-  min-width: 8px;
 }
 
 .menuLogo {
-  height: 50px;
+  height: 2.5em;
   vertical-align: middle;
 }
 
-.menuTitle {
-  text-align: center;
-  font-weight: 300;
+.menuSpacer {
+  min-width: 0.5em;
 }
 
-/deep/ .mat-tab-link {
-  line-height: 28px !important;
-  height: 28px !important;
-  min-width: 130px !important;
-}
-
-/deep/ .mat-tab-header {
-  color: black !important;
-  border-radius: 5px 5px 0px 0px;
-}
-
-/deep/ .mat-tab-link {
+.mat-tab-link {
   font-size: 16px;
-  opacity: 1 !important;
-  color: black !important;
+  line-height: 2em;
+  height: 2em;
+  min-width: 12ch;
+  opacity: 1;
+  color: black;
 }
 
-/deep/ .mat-ink-bar {
+::ng-deep .mat-ink-bar {
   background-color: #087f23 !important;
-}
-
-/deep/ .mat-app-background {
-  margin-right: 0px;
-  margin-left: 0px;
 }
 
 .menuTitle h1 {
   line-height: 2ch;
   font-size: 18px;
 }
+.content-spacer {
+  height: 54px;
+}
 
-@media screen and (min-width: 600px){
+/* Large displays */
+@media screen and (min-width: 600px) {
   .menuTitle h1 {
     display: inline;
   }
 
-  .menuTitle .secondH1{
-    padding-left: 1ch; 
+  .menuTitle .secondH1 {
+    padding-left: 1ch;
+  }
+
+  .mat-tab-link {
+    min-width: 16ch;
+  }
+
+  .content-spacer {
+    height: 60px;
   }
 }
 
-@media screen and (max-width: 440px){
-  .menuTitle{
+/* Small displays */
+@media screen and (max-width: 440px) {
+  .menuTitle {
     display: none;
   }
 }
+
+
