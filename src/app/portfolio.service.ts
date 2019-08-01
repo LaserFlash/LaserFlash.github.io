@@ -1,8 +1,8 @@
 // tslint:disable:max-line-length
 
 import { Injectable } from '@angular/core';
-import { PortfolioItem } from './portfolioItem';
-import { PortfolioButton } from './portfolioButton';
+import { PortfolioItem } from './portfolio-view/portfolio-item/portfolioItem';
+import { PortfolioButton } from './portfolio-view/portfolio-item/portfolioButton';
 
 @Injectable()
 export class PortfolioService {

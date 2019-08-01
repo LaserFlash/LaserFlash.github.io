@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PortfolioItem } from '../portfolioItem';
-import { PortfolioButton } from '../portfolioButton';
+import { PortfolioItem } from './portfolio-item/portfolioItem';
 
 import { PortfolioService } from '../portfolio.service';
 
