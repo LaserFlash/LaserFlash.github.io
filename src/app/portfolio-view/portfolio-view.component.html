@@ -7,12 +7,15 @@
     fxLayoutWrap
     class="card-deck-container"
   >
-    <div class="card-container" fxFlex *ngFor="let item of items">
-      <mat-card
-        class="card-width"
-        fxFlex.gt-md="calc(30% - 20px)"
-        fxFlex="grow"
-      >
+    <div
+      class="card-container card-width"
+      fxFlex.gt-md="calc(25% - 8px)"
+      fxFlex.lt-lg="calc(33% - 8px)"
+      fxFlex.lt-md="calc(50% - 8px)"
+      fxFlex.lt-sm="100%"
+      *ngFor="let item of items"
+    >
+      <mat-card fxFlex="grow">
         <picture>
           <source srcset="{{item.image}}.webp" type="image/webp" />
           <source srcset="{{item.image}}.png" type="image/jpeg" />

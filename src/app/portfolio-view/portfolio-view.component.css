@@ -15,10 +15,6 @@
   border-top-right-radius: 4px;
 }
 
-.card-width {
-  min-width: 20em !important;
-}
-
 .card-content {
   font-size: 18px;
 }
@@ -26,9 +22,5 @@
 @media only screen and (max-width: 599px) {
   .card-container {
     margin: 0px 0px 8px 0px;
-  }
-
-  .card-width {
-    min-width: 22em !important;
   }
 }
