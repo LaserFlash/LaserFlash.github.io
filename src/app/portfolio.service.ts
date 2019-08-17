@@ -27,7 +27,7 @@ export class PortfolioService {
     this.portfolioItems.push(
       new PortfolioItem(
         'Boat Logging',
-        'This is a web app for recording the usage of boats and any issues or breakages they may have. \n\n This app and its deriviations are used by: \n - WYST \n - TRIYA \n - NPYC \n - QCYC \n \n To satisfy Health and Safety requirements from Yachting New Zealand.',
+        'This is a web app for boat/yacht clubs to record boat usage, maintenance, incident reporting, and safety prodcedures. \n\n This app and its deriviations are used by the following yacht clubs: \n - WYST \n - TRIYA \n - NPYC \n - QCYC \n \n Satisfying the Marine Operators Safety System (MOSS) requirements of Maritime New Zealand and Yachting New Zealand\'s  Health and Safety requirements.',
         'assets/images/nespresso',
         new PortfolioButton(
           'Source',
