@@ -19,6 +19,11 @@ export class CodeListComponent implements OnInit {
       text: 'Angular'
     },
     {
+      svgIconName: 'react',
+      svgIconPath: '../assets/images/language-icons/react.svg',
+      text: 'React'
+    },
+    {
       svgIconName: 'html',
       svgIconPath: '../assets/images/language-icons/html.svg',
       text: 'HTML'
@@ -32,6 +37,16 @@ export class CodeListComponent implements OnInit {
       svgIconName: 'java',
       svgIconPath: '../assets/images/language-icons/java.svg',
       text: 'Java'
+    },
+    {
+      svgIconName: 'csharp',
+      svgIconPath: '../assets/images/language-icons/csharp.svg',
+      text: 'C#'
+    },
+    {
+      svgIconName: 'github',
+      svgIconPath: '../assets/images/language-icons/github.svg',
+      text: 'GitHub'
     },
     {
       svgIconName: 'git',
