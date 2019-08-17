@@ -52,6 +52,15 @@ export class PortfolioService {
 
     this.portfolioItems.push(
       new PortfolioItem(
+        'Pihinga - Job Search',
+        ' [**Pihinga**](https://www.facebook.com/Pihinga) was a startup focused around helping single parents find employment relevant to them, we were tasked with designing a platform where jobs intended for this audience could be listed and applied to by the parents. \n\n This required interactions with the client **Pihinga** throughout the planning and development cycle and managing their requests. \n Deliverables: \n - Requirement Specification \n - Project Architecture \n - Wireframing and Design \n - Skeleton Implementation \n - Minimum Viable Product \n - Final Solution / Handover \n\n **Tools and Frameworks**: ReactJS, Firebase, and Xanpan styled development ',
+        'assets/images/pihinga',
+        null, null
+      )
+    );
+
+    this.portfolioItems.push(
+      new PortfolioItem(
         'The Finding of I, Zack',
         'A **Java** game built for **SWEN222**. \n\n This was worked on by a group of five while at Victoria University. The original idea was inspired by "The Binding Of Issac", a top down dungeon crawler. I was primarily in charge of designing the user interface, and implementing the rendering of entities and the world. \n #### Design \n Follows a Model View Controller (MVC) design approach, using Java Swing for visual aspects',
         'assets/images/IZack',
