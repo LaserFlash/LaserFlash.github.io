@@ -19,7 +19,7 @@ export class PortfolioService {
         ),
         new PortfolioButton(
           'Website',
-          'https://laserflash.tk/steam-friends-skin/'
+          'https://laserflash.tk/steam-chat-skin-website/'
         )
       )
     );
