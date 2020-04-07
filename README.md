@@ -1,5 +1,6 @@
 # My webpage hosted on Github
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/dee277f066514ceeb57f455455f6922c)](https://app.codacy.com/manual/LaserFlash/LaserFlash.github.io?utm_source=github.com&utm_medium=referral&utm_content=LaserFlash/LaserFlash.github.io&utm_campaign=Badge_Grade_Settings)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/dee277f066514ceeb57f455455f6922c)](https://app.codacy.com/app/LaserFlash/LaserFlash.github.io?utm_source=github.com&utm_medium=referral&utm_content=LaserFlash/LaserFlash.github.io&utm_campaign=Badge_Grade_Settings)
 [![Build Status](https://travis-ci.org/LaserFlash/LaserFlash.github.io.svg?branch=webDev)](https://travis-ci.org/LaserFlash/LaserFlash.github.io) [![Greenkeeper badge](https://badges.greenkeeper.io/LaserFlash/LaserFlash.github.io.svg)](https://greenkeeper.io/)
 
