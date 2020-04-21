@@ -1,9 +1,5 @@
 name: Build and Deploy
 on:
-  pull_request:
-    types: [closed]
-    branches:
-      - webDev
   push:
     branches:
       - webDev
