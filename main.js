@@ -347,12 +347,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _portfolio_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./portfolio.service */ "./src/app/portfolio.service.ts");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _hammer_config__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./hammer.config */ "./src/app/hammer.config.ts");
-/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
-/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _code_list_code_list_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./code-list/code-list.component */ "./src/app/code-list/code-list.component.ts");
-/* harmony import */ var _language_icon_language_icon_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./language-icon/language-icon.component */ "./src/app/language-icon/language-icon.component.ts");
-/* harmony import */ var ngx_markdown__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ngx-markdown */ "./node_modules/ngx-markdown/__ivy_ngcc__/fesm5/ngx-markdown.js");
-
+/* harmony import */ var _code_list_code_list_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./code-list/code-list.component */ "./src/app/code-list/code-list.component.ts");
+/* harmony import */ var _language_icon_language_icon_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./language-icon/language-icon.component */ "./src/app/language-icon/language-icon.component.ts");
+/* harmony import */ var ngx_markdown__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ngx-markdown */ "./node_modules/ngx-markdown/__ivy_ngcc__/fesm5/ngx-markdown.js");
 
 
 
@@ -391,6 +388,7 @@ var AppModule = /** @class */ (function () {
             { provide: _angular_common__WEBPACK_IMPORTED_MODULE_3__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_3__["HashLocationStrategy"] }
         ], imports: [[
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["HammerModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
                 _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["FlexLayoutModule"],
@@ -402,7 +400,7 @@ var AppModule = /** @class */ (function () {
                 _angular_material_button__WEBPACK_IMPORTED_MODULE_11__["MatButtonModule"],
                 _angular_material_icon__WEBPACK_IMPORTED_MODULE_12__["MatIconModule"],
                 _angular_material_card__WEBPACK_IMPORTED_MODULE_13__["MatCardModule"],
-                ngx_markdown__WEBPACK_IMPORTED_MODULE_23__["MarkdownModule"].forRoot()
+                ngx_markdown__WEBPACK_IMPORTED_MODULE_22__["MarkdownModule"].forRoot()
             ]] });
     return AppModule;
 }());
@@ -410,8 +408,9 @@ var AppModule = /** @class */ (function () {
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_14__["AppComponent"],
         _portfolio_view_portfolio_view_component__WEBPACK_IMPORTED_MODULE_15__["PortfolioViewComponent"],
         _about_view_about_view_component__WEBPACK_IMPORTED_MODULE_16__["AboutViewComponent"],
-        _code_list_code_list_component__WEBPACK_IMPORTED_MODULE_21__["CodeListComponent"],
-        _language_icon_language_icon_component__WEBPACK_IMPORTED_MODULE_22__["LanguageIconComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _code_list_code_list_component__WEBPACK_IMPORTED_MODULE_20__["CodeListComponent"],
+        _language_icon_language_icon_component__WEBPACK_IMPORTED_MODULE_21__["LanguageIconComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["HammerModule"],
         _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
         _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
         _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["FlexLayoutModule"],
@@ -422,7 +421,7 @@ var AppModule = /** @class */ (function () {
         _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_10__["MatToolbarModule"],
         _angular_material_button__WEBPACK_IMPORTED_MODULE_11__["MatButtonModule"],
         _angular_material_icon__WEBPACK_IMPORTED_MODULE_12__["MatIconModule"],
-        _angular_material_card__WEBPACK_IMPORTED_MODULE_13__["MatCardModule"], ngx_markdown__WEBPACK_IMPORTED_MODULE_23__["MarkdownModule"]] }); })();
+        _angular_material_card__WEBPACK_IMPORTED_MODULE_13__["MatCardModule"], ngx_markdown__WEBPACK_IMPORTED_MODULE_22__["MarkdownModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
@@ -430,11 +429,12 @@ var AppModule = /** @class */ (function () {
                     _app_component__WEBPACK_IMPORTED_MODULE_14__["AppComponent"],
                     _portfolio_view_portfolio_view_component__WEBPACK_IMPORTED_MODULE_15__["PortfolioViewComponent"],
                     _about_view_about_view_component__WEBPACK_IMPORTED_MODULE_16__["AboutViewComponent"],
-                    _code_list_code_list_component__WEBPACK_IMPORTED_MODULE_21__["CodeListComponent"],
-                    _language_icon_language_icon_component__WEBPACK_IMPORTED_MODULE_22__["LanguageIconComponent"]
+                    _code_list_code_list_component__WEBPACK_IMPORTED_MODULE_20__["CodeListComponent"],
+                    _language_icon_language_icon_component__WEBPACK_IMPORTED_MODULE_21__["LanguageIconComponent"]
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+                    _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["HammerModule"],
                     _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
                     _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
                     _angular_flex_layout__WEBPACK_IMPORTED_MODULE_5__["FlexLayoutModule"],
@@ -446,7 +446,7 @@ var AppModule = /** @class */ (function () {
                     _angular_material_button__WEBPACK_IMPORTED_MODULE_11__["MatButtonModule"],
                     _angular_material_icon__WEBPACK_IMPORTED_MODULE_12__["MatIconModule"],
                     _angular_material_card__WEBPACK_IMPORTED_MODULE_13__["MatCardModule"],
-                    ngx_markdown__WEBPACK_IMPORTED_MODULE_23__["MarkdownModule"].forRoot()
+                    ngx_markdown__WEBPACK_IMPORTED_MODULE_22__["MarkdownModule"].forRoot()
                 ],
                 providers: [
                     _portfolio_service__WEBPACK_IMPORTED_MODULE_17__["PortfolioService"],
