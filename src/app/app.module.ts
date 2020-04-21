@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
@@ -26,7 +26,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { HammerConfig } from './hammer.config';
-import 'hammerjs';
+
 import { CodeListComponent } from './code-list/code-list.component';
 import { LanguageIconComponent } from './language-icon/language-icon.component';
 
@@ -42,6 +42,7 @@ import { MarkdownModule } from 'ngx-markdown';
   ],
   imports: [
     BrowserModule,
+    HammerModule,
     HttpClientModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
