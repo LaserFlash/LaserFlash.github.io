@@ -206,7 +206,8 @@ function AppComponent_a_15_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", routeLink_r2.label, " ");
 } }
 var AppComponent = /** @class */ (function () {
-    function AppComponent() {
+    function AppComponent(router) {
+        this.router = router;
         this.inkColour = '#087f23';
         this.titleFirst = 'Bryn Bennett';
         this.titleSecond = '"LaserFlash"';
@@ -230,25 +231,16 @@ var AppComponent = /** @class */ (function () {
     };
     AppComponent.prototype.swipe = function (action) {
         var _this = this;
-        if (action === void 0) { action = this.SWIPE_ACTION.RIGHT; }
-        var pos = this.routeLinks.filter(function (item) {
+        var currentIndex = this.routeLinks.indexOf(this.routeLinks.filter(function (item) {
             if (item.link === _this.router.url) {
                 return item;
             }
-        });
-        var currentIndex = this.routeLinks.indexOf(pos[0]);
-        if (currentIndex > this.routeLinks.length || currentIndex < 0) {
-            return;
-        }
-        var nextIndex = 0;
-        // next
-        if (action === this.SWIPE_ACTION.RIGHT) {
-            nextIndex = currentIndex - 1;
-        }
-        // previous
-        if (action === this.SWIPE_ACTION.LEFT) {
-            nextIndex = currentIndex + 1;
-        }
+        })[0]);
+        var nextIndex = action === this.SWIPE_ACTION.RIGHT
+            ? currentIndex - 1
+            : action === this.SWIPE_ACTION.LEFT
+                ? currentIndex + 1
+                : currentIndex;
         if (nextIndex >= 0 &&
             nextIndex < this.routeLinks.length &&
             nextIndex !== currentIndex) {
@@ -258,7 +250,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent.prototype.getState = function (outlet) {
         return outlet.activatedRouteData.state;
     };
-    AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
+    AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"])); };
     AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 21, vars: 4, consts: [["color", "primary"], ["srcset", "assets/images/logo.webp", "type", "image/webp"], ["srcset", "assets/images/logo.png", "type", "image/jpeg"], ["src", "assets/images/logo.png", "alt", "Bryn Bennett 'LaserFlash'", 1, "menuLogo"], [1, "menuSpacer"], [1, "menuTitle"], [1, "firstH1"], [1, "secondH1"], ["fxFlex", ""], ["mat-tab-nav-bar", ""], ["mat-tab-link", "", "backgroundColor", "accent", "routerLinkActive", "", 3, "routerLink", "active", 4, "ngFor", "ngForOf"], [2, "background", "#37474f"], ["id", "scrollId", 1, "content-spacer"], [1, "content", 3, "swipeleft", "swiperight"], ["o", "outlet"], ["mat-tab-link", "", "backgroundColor", "accent", "routerLinkActive", "", 3, "routerLink", "active"], ["rla", "routerLinkActive"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-toolbar", 0);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span");
@@ -313,7 +305,7 @@ var AppComponent = /** @class */ (function () {
                 templateUrl: './app.component.html',
                 styleUrls: ['./app.component.css']
             }]
-    }], function () { return []; }, null); })();
+    }], function () { return [{ type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"] }]; }, null); })();
 
 
 /***/ }),
