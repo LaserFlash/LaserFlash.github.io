@@ -12,8 +12,10 @@ export class LanguageIconComponent implements OnInit {
   @Input() svgIconPath: string;
   @Input() text: string;
 
-
-  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer) { }
+  constructor(
+    private matIconRegistry: MatIconRegistry,
+    private domSanitizer: DomSanitizer
+  ) {}
 
   ngOnInit() {
     this.matIconRegistry.addSvgIcon(
@@ -21,5 +23,4 @@ export class LanguageIconComponent implements OnInit {
       this.domSanitizer.bypassSecurityTrustResourceUrl(this.svgIconPath)
     );
   }
-
 }

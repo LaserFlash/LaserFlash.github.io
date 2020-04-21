@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./code-list.component.css']
 })
 export class CodeListComponent implements OnInit {
-
   iconList = [
     {
       svgIconName: 'firebase',
@@ -54,8 +53,7 @@ export class CodeListComponent implements OnInit {
       text: 'Git'
     }
   ];
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() { }
-
+  ngOnInit() {}
 }

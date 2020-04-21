@@ -1,11 +1,13 @@
-import { BrowserModule, HammerModule } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  HammerModule,
+  HAMMER_GESTURE_CONFIG
+} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
 import { OverlayContainer } from '@angular/cdk/overlay';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -16,21 +18,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 
+import { MarkdownModule } from 'ngx-markdown';
+
 import { AppComponent } from './app.component';
 import { PortfolioViewComponent } from './portfolio-view/portfolio-view.component';
 import { AboutViewComponent } from './about-view/about-view.component';
-
-import { PortfolioService } from './portfolio.service';
-
-import { AppRoutingModule } from './app-routing.module';
-
-import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
-import { HammerConfig } from './hammer.config';
-
 import { CodeListComponent } from './code-list/code-list.component';
 import { LanguageIconComponent } from './language-icon/language-icon.component';
 
-import { MarkdownModule } from 'ngx-markdown';
+import { PortfolioService } from './portfolio.service';
+import { AppRoutingModule } from './app-routing.module';
+import { HammerConfig } from './hammer.config';
 
 @NgModule({
   declarations: [

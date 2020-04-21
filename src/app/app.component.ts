@@ -1,13 +1,7 @@
-import { Component, NgModule, EventEmitter, OnInit } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { AppRoutingModule } from './app-routing.module';
-import { PortfolioViewComponent } from './portfolio-view/portfolio-view.component';
-import { AboutViewComponent } from './about-view/about-view.component';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { routerTransition } from './router.animations';
 
-import { Router, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-root',
   animations: [routerTransition],
@@ -29,9 +23,7 @@ export class AppComponent implements OnInit {
 
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
 
-  constructor(private _router: Router) {
-    this.router = _router;
-  }
+  constructor() {}
 
   ngOnInit() {
     this.router.events.subscribe(evt => {

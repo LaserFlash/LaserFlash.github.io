@@ -8,9 +8,8 @@ describe('LanguageIconComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LanguageIconComponent ]
-    })
-    .compileComponents();
+      declarations: [LanguageIconComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
