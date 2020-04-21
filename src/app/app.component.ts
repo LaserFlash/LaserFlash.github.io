@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, RouterOutlet } from '@angular/router';
 import { routerTransition } from './router.animations';
 
 @Component({
@@ -9,8 +9,6 @@ import { routerTransition } from './router.animations';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  router: Router;
-
   inkColour = '#087f23';
 
   titleFirst = 'Bryn Bennett';
@@ -23,7 +21,7 @@ export class AppComponent implements OnInit {
 
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
     this.router.events.subscribe(evt => {
@@ -38,27 +36,22 @@ export class AppComponent implements OnInit {
     });
   }
 
-  swipe(action = this.SWIPE_ACTION.RIGHT) {
-    const pos: any = this.routeLinks.filter(item => {
-      if (item.link === this.router.url) {
-        return item;
-      }
-    });
-    const currentIndex: number = this.routeLinks.indexOf(pos[0]);
+  swipe(action: string) {
+    const currentIndex: number = this.routeLinks.indexOf(
+      this.routeLinks.filter(item => {
+        if (item.link === this.router.url) {
+          return item;
+        }
+      })[0]
+    );
 
-    if (currentIndex > this.routeLinks.length || currentIndex < 0) {
-      return;
-    }
-    let nextIndex = 0;
-    // next
-    if (action === this.SWIPE_ACTION.RIGHT) {
-      nextIndex = currentIndex - 1;
-    }
+    const nextIndex =
+      action === this.SWIPE_ACTION.RIGHT
+        ? currentIndex - 1
+        : action === this.SWIPE_ACTION.LEFT
+        ? currentIndex + 1
+        : currentIndex;
 
-    // previous
-    if (action === this.SWIPE_ACTION.LEFT) {
-      nextIndex = currentIndex + 1;
-    }
     if (
       nextIndex >= 0 &&
       nextIndex < this.routeLinks.length &&
@@ -68,7 +61,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  getState(outlet) {
+  getState(outlet: RouterOutlet) {
     return outlet.activatedRouteData.state;
   }
 }
