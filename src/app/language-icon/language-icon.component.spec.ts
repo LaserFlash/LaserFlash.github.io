@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { LanguageIconComponent } from './language-icon.component';
 
@@ -6,7 +6,7 @@ describe('LanguageIconComponent', () => {
   let component: LanguageIconComponent;
   let fixture: ComponentFixture<LanguageIconComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [LanguageIconComponent]
     }).compileComponents();
