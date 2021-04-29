@@ -1,0 +1,25 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "17:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - LaserFlash
+  ignore:
+  - dependency-name: "@angular-devkit/build-angular"
+    versions:
+    - 0.1101.2
+    - 0.1101.3
+    - 0.1102.0
+    - 0.1102.10
+    - 0.1102.7
+  - dependency-name: "@angular/cli"
+    versions:
+    - 11.1.2
+    - 11.2.10
+  - dependency-name: karma
+    versions:
+    - 6.3.0
