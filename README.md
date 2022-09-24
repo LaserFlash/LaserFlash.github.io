@@ -11,8 +11,8 @@
 
 ## URLS
 
--   [laserflash.github.io](http://laserflash.github.io)
--   [laserflash.tk](http://laserflash.tk)
+-   [laserflash.github.io](https://laserflash.github.io)
+-   [laser.dev](https://lasr.dev)
 
 ## master Branch
 
